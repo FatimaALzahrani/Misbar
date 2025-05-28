@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FatimaALzahrani/Misbar/static/css/main.b86feefd.css",
+    "main.js": "/FatimaALzahrani/Misbar/static/js/main.274e0aa9.js",
+    "index.html": "/FatimaALzahrani/Misbar/index.html",
+    "main.b86feefd.css.map": "/FatimaALzahrani/Misbar/static/css/main.b86feefd.css.map",
+    "main.274e0aa9.js.map": "/FatimaALzahrani/Misbar/static/js/main.274e0aa9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b86feefd.css",
+    "static/js/main.274e0aa9.js"
+  ]
+}
