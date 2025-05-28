@@ -1,0 +1,952 @@
+.main-background {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #166534 100%);
+  min-height: 100vh;
+  direction: rtl;
+}
+
+.loading-background {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 50%, #16a34a 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logo-icon {
+  background: linear-gradient(135deg, #3b82f6, #10b981);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.header-title {
+  color: white;
+}
+
+.main-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #bfdbfe;
+  font-size: 1.125rem;
+}
+
+.satellite-badges {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  gap: 1rem;
+}
+
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+}
+
+.badge-landsat {
+  background: rgba(59, 130, 246, 0.3);
+}
+
+.badge-sentinel {
+  background: rgba(16, 185, 129, 0.3);
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.refresh-button {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.refresh-button:hover {
+  background: linear-gradient(135deg, #059669, #047857);
+}
+
+.refresh-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.status-indicator {
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  backdrop-filter: blur(4px);
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+}
+
+.status-text {
+  color: #bbf7d0;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat-info {
+  color: white;
+}
+
+.stat-label {
+  color: #bfdbfe;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.stat-subtext {
+  font-size: 0.75rem;
+  color: #bbf7d0;
+}
+
+.stat-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.data-table-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.table-header {
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.8),
+    rgba(16, 185, 129, 0.8)
+  );
+  backdrop-filter: blur(4px);
+  padding: 2rem;
+}
+
+.table-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.table-update-info {
+  text-align: right;
+  color: #bfdbfe;
+}
+
+.data-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+}
+
+.table-head {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.table-header-cell {
+  padding: 1rem 1.5rem;
+  text-align: right;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+}
+
+.table-row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.table-row:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.table-cell {
+  padding: 1.5rem;
+}
+
+.location-cell {
+  color: white;
+}
+
+.location-name {
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.location-description {
+  color: #bfdbfe;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.location-coordinates {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.75rem;
+}
+
+.coordinate-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+
+.landsat-badge {
+  background: rgba(59, 130, 246, 0.2);
+  color: #bfdbfe;
+}
+
+.sentinel-badge {
+  background: rgba(16, 185, 129, 0.2);
+  color: #bbf7d0;
+}
+
+.ndvi-cell {
+  text-align: center;
+}
+
+.ndvi-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.ndvi-high {
+  color: #bbf7d0;
+}
+.ndvi-medium {
+  color: #fde047;
+}
+.ndvi-low {
+  color: #fca5a5;
+}
+
+.satellite-name {
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.landsat-name {
+  color: #bfdbfe;
+}
+.sentinel-name {
+  color: #bbf7d0;
+}
+
+.scene-info {
+  font-size: 0.75rem;
+  color: #d1d5db;
+}
+
+.cloud-cover-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cloud-item {
+  display: flex;
+  align-items: center;
+}
+
+.cloud-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.5rem;
+}
+
+.cloud-text {
+  font-size: 0.875rem;
+}
+
+.landsat-cloud {
+  color: #bfdbfe;
+}
+.sentinel-cloud {
+  color: #bbf7d0;
+}
+
+.quality-cell {
+  text-align: center;
+}
+
+.quality-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.quality-high {
+  background: rgba(16, 185, 129, 0.2);
+  color: #bbf7d0;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.quality-medium {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fde047;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.quality-low {
+  background: rgba(239, 68, 68, 0.2);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.vegetation-status {
+  font-size: 0.75rem;
+  color: #d1d5db;
+  margin-top: 0.5rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal-container {
+  background: linear-gradient(180deg, #334155, #1e293b);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 72rem;
+  width: 100%;
+  margin: 1rem;
+  max-height: 95vh;
+  overflow-y: auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.modal-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.modal-close-button {
+  color: #9ca3af;
+  font-size: 2.25rem;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.modal-close-button:hover {
+  color: white;
+}
+
+.modal-description {
+  color: #bfdbfe;
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+.satellite-comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.satellite-card {
+  backdrop-filter: blur(4px);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid;
+}
+
+.landsat-card {
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.2),
+    rgba(30, 58, 138, 0.2)
+  );
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.sentinel-card {
+  background: linear-gradient(
+    135deg,
+    rgba(16, 185, 129, 0.2),
+    rgba(6, 78, 59, 0.2)
+  );
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.satellite-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.satellite-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0.75rem;
+}
+
+.landsat-title {
+  color: #93c5fd;
+}
+.sentinel-title {
+  color: #6ee7b7;
+}
+
+.ndvi-display {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.ndvi-large-value {
+  font-size: 3.75rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.landsat-ndvi {
+  color: #bfdbfe;
+}
+.sentinel-ndvi {
+  color: #bbf7d0;
+}
+
+.ndvi-label {
+  font-weight: 600;
+}
+
+.landsat-label {
+  color: #93c5fd;
+}
+.sentinel-label {
+  color: #6ee7b7;
+}
+
+.technical-info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.landsat-info-row {
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.sentinel-info-row {
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.info-label {
+  color: #bfdbfe;
+}
+
+.sentinel-info-label {
+  color: #bbf7d0;
+}
+
+.info-value {
+  color: white;
+  font-family: monospace;
+  font-size: 0.75rem;
+}
+
+.ndvi-comparison-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.comparison-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.comparison-item {
+  text-align: center;
+}
+
+.comparison-satellite-label {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.comparison-ndvi-value {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.ndvi-progress-bar {
+  width: 100%;
+  height: 1rem;
+  border-radius: 9999px;
+  margin-bottom: 0.5rem;
+}
+
+.landsat-progress-bg {
+  background: rgba(30, 58, 138, 0.3);
+}
+.sentinel-progress-bg {
+  background: rgba(6, 78, 59, 0.3);
+}
+.average-progress-bg {
+  background: rgba(146, 64, 14, 0.3);
+}
+
+.ndvi-progress-fill {
+  height: 1rem;
+  border-radius: 9999px;
+  transition: width 1s ease;
+}
+
+.landsat-progress {
+  background: #60a5fa;
+}
+.sentinel-progress {
+  background: #4ade80;
+}
+.average-progress {
+  background: #fbbf24;
+}
+
+.comparison-status {
+  font-size: 0.875rem;
+  color: #d1d5db;
+}
+
+.technical-api-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.info-section {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.section-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.technical-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.technical-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+}
+
+.technical-label {
+  color: #d1d5db;
+}
+
+.technical-value {
+  color: white;
+  font-family: monospace;
+}
+
+.api-status-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.api-status-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+}
+
+.api-name {
+  color: #d1d5db;
+}
+
+.api-status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.api-connected {
+  background: rgba(16, 185, 129, 0.2);
+  color: #bbf7d0;
+}
+
+.api-disconnected {
+  background: rgba(239, 68, 68, 0.2);
+  color: #fca5a5;
+}
+
+.api-active {
+  background: rgba(59, 130, 246, 0.2);
+  color: #93c5fd;
+}
+
+.api-monitoring {
+  background: rgba(168, 85, 247, 0.2);
+  color: #c4b5fd;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-update-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.footer-api-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-api-card {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid;
+}
+
+.footer-landsat-card {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: rgba(59, 130, 246, 0.2);
+}
+
+.footer-sentinel-card {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.2);
+}
+
+.footer-nasa-card {
+  background: rgba(168, 85, 247, 0.1);
+  border-color: rgba(168, 85, 247, 0.2);
+}
+
+.footer-esa-card {
+  background: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.2);
+}
+
+.footer-api-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.footer-api-description {
+  font-size: 0.875rem;
+}
+
+.footer-status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-status-item {
+  display: flex;
+  align-items: center;
+}
+
+.footer-status-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: 0.5rem;
+}
+
+.status-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  margin-left: 0.5rem;
+}
+
+.status-dot-active {
+  background: #10b981;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .satellite-comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .technical-api-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-api-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .main-title {
+    font-size: 1.875rem;
+  }
+
+  .modal-container {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-status-bar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .satellite-badges {
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+  }
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.transition-colors {
+  transition: color 0.3s ease, background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.focus-ring:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #3b82f6, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.shadow-glow {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
+}
+
+.shadow-soft {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
