@@ -246,8 +246,7 @@ const MisbarChatbot = () => {
     return analysis;
   };
 
-  // توليد الردود الذكية المطورة
-  const generateSmartResponse = async (input, analysis) => {
+    const generateSmartResponse = async (input, analysis) => {
     setIsTyping(true);
     await new Promise(resolve => setTimeout(resolve, 1500));
 
