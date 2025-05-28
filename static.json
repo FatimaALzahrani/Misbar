@@ -1,0 +1,9 @@
+{
+  "root": "build/",
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
