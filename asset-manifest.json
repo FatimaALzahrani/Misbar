@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/FatimaALzahrani/Misbar/static/css/main.b86feefd.css",
-    "main.js": "/FatimaALzahrani/Misbar/static/js/main.23ca8ff2.js",
-    "index.html": "/FatimaALzahrani/Misbar/index.html",
-    "main.b86feefd.css.map": "/FatimaALzahrani/Misbar/static/css/main.b86feefd.css.map",
-    "main.23ca8ff2.js.map": "/FatimaALzahrani/Misbar/static/js/main.23ca8ff2.js.map"
+    "main.css": "/Misbar/static/css/main.b86feefd.css",
+    "main.js": "/Misbar/static/js/main.23ca8ff2.js",
+    "index.html": "/Misbar/index.html",
+    "main.b86feefd.css.map": "/Misbar/static/css/main.b86feefd.css.map",
+    "main.23ca8ff2.js.map": "/Misbar/static/js/main.23ca8ff2.js.map"
   },
   "entrypoints": [
     "static/css/main.b86feefd.css",
